@@ -2,37 +2,52 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
   p {
-    text-align: center;
     color: gray;
     font-family: Inter, Lato;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: left;
   }
 
   h1 {
-    text-align: center;
     color: black;
     font-weight: bold;
     font-family: Inter, Lato;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: left;
   }
 
   .newsletter-form-container {
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .newsletter-form-button:hover {
-  background-color: #948eff;
+  .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
   }
 
-  .newsletter-form-button:active {
-  background-color: #0f02ff;
+  .newsletter-form-button {
+    align-self: flex-start;
+    
+    &:hover {
+      background-color: #948eff;
+    }
+
+   &:active {
+      background-color: #0f02ff;
+    }
   }
   
 </style>
 
 
-<div class="newsletter-form-container" style="background-color: white;">
+<div class="newsletter-form-container;">
   <p>Ready to take the next big step for your business?</p>
   <h1>Join other 3200+ marketers now!</h1>
   <form class="newsletter-form" action="https://app.loops.so/api/newsletter-form/cl52na64o054109lcc7yszus4"
